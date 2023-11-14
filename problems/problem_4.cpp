@@ -1,16 +1,17 @@
 #include <string>
 #include <sstream>
 
-std::string problemSolution4(const std::string &macAddress) {
-    // write your code here
-std::string result;
-    if(macAddress[0]=='F' and macAddress[1]=='F'){
-        result= "Broadcast";
-    }else if((int)macAddress[1]%2==0){
-        result= "Unicast";
-    }else if((int)macAddress[1]%2==1){
-        result= "Multicast";
-    // make use of control flow statements
-        return result;
-    // return result;
+std::string problemSolution4(const std::string &macAddress)
+{
+    if (macAddress == "FF:FF:FF:FF:FF:FF")
+        return "Broadcast";
+
+    int x;
+    std::stringstream stream;
+    stream << macAddress.substr(0, 2);
+    stream >> std::hex >> x;
+
+    return (x % 2)
+               ? "Multicast"
+               : "Unicast";
 }
