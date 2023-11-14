@@ -17,7 +17,4 @@ std::string problemSolution3(float height, char S)
         return "Normal";
     return "Tall";
 }
-    // use return to return your result
-            return result;
-    // make use of control flow statements
-}
+
