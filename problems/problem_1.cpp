@@ -2,7 +2,7 @@ void problemSolution1(float consumed_water) {
     float cost;
     // write your code here
 float d = (consumed_water > 30) ? 30.0 : consumed_water;
-float e = (consumed water > 50) ? 20 : ((a == 30) ? (consumed_water - 30) : 0);
+float e = (consumed_water > 50) ? 20 : ((a == 30) ? (consumed_water - 30) : 0);
 float f = (consumed_water > 60) ? 10 : ((b == 20) ? (consumed_water - 50) : 0);
 
 cost += 13
