@@ -1,7 +1,5 @@
 void problemSolution1(float consumed_water) {
     // write your code here
-float problemSolution1(float consumed_water)
-{
     float cost;
     float x = (consumed_water > 30) ? 30.0 : consumed_water;
     float y = (consumed_water > 50) ? 20 : ((x == 30) ? (consumed_water - 30) : 0);
